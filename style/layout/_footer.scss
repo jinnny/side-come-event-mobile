@@ -1,0 +1,44 @@
+.chat {
+  &-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 45px;
+    border: solid 1px $pale;
+    background-color: $white;
+  }
+  &__input {
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $pale;
+    }
+    &::-moz-placeholder {
+      color: $pale;
+    }
+    width: calc(100% - 106px);
+    font-size: 13px;
+    height: 43px;
+    color: $bright-orange;
+    float: left;
+    border: none;
+  }
+  &__button {
+    &-add {
+      width: 48px;
+      height: 45px;
+      float: left;
+    }
+    &-send {
+      float: right;
+      font-size: 14px;
+      color: $bright-orange;
+      width: 58px;
+      height: 45px;
+      background: $pale;
+    }
+  }
+}

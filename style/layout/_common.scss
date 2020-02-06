@@ -1,0 +1,30 @@
+*, body {
+  line-height: 1.25;
+}
+
+.element--hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.align {
+  &-right {
+    text-align: right;
+  }
+  &-center {
+    text-align: center;
+  }
+}
+
+.justify {
+  &-space {
+    justify-content: space-between !important;
+  }
+  &-center {
+    justify-content: center !important;
+  }
+}

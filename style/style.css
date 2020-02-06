@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/*normal*/
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 400;
+  src: url("../fonts/NotoSansKR-Regular.eot");
+  src: url("../fonts/NotoSansKR-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../fonts/NotoSansKR-Regular.woff") format("woff"), url("../fonts/NotoSansKR-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 600;
+  src: url("../fonts/NotoSansKR-Medium.eot");
+  src: url("../fonts/NotoSansKR-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../fonts/NotoSansKR-Medium.woff") format("woff"), url("../fonts/NotoSansKR-Medium.otf") format("opentype");
+}
+/**
+ * Created by Eunjin Yang on 2019. 9. 17.
+ */
+/**
+ * Created by Eunjin Yang on 2019. 5. 25.
+ * Github : http://github.com/jinny920311
+ */
+/**
+ * Created by Eunjin Yang on 2019. 2. 28.
+ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 14px;
+}
+
+*, body {
+  font-family: "NotoSansKR", AppleSDGothicNeo, -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+strong,
+b {
+  color: inherit;
+  font-size: inherit;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+mark {
+  color: inherit;
+  background: none;
+}
+
+button {
+  -webkit-appearance: none;
+}
+
+input,
+input:matches([type="password"], [type="search"]),
+input[type=text],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+*, body {
+  line-height: 1.25;
+}
+
+.element--hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+
+.justify-space {
+  justify-content: space-between !important;
+}
+.justify-center {
+  justify-content: center !important;
+}
+
+.chat-header {
+  position: relative;
+  width: 100%;
+  height: 118px;
+  padding: 10px 5px;
+  background: url("../images/header-comev-bg.png") no-repeat 50% 50%;
+}
+.chat-header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.chat__title {
+  position: absolute;
+  left: calc(50% - 75px);
+  top: 19px;
+}
+.chat__button-option {
+  float: right;
+}
+
+.chat-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 45px;
+  border: solid 1px #fae6d8;
+  background-color: #ffffff;
+}
+.chat__input {
+  width: calc(100% - 106px);
+  font-size: 13px;
+  height: 43px;
+  color: #ff6600;
+  float: left;
+  border: none;
+}
+.chat__input:focus {
+  outline: none;
+}
+.chat__input::placeholder {
+  color: #fae6d8;
+}
+.chat__input::-moz-placeholder {
+  color: #fae6d8;
+}
+.chat__button-add {
+  width: 48px;
+  height: 45px;
+  float: left;
+}
+.chat__button-send {
+  float: right;
+  font-size: 14px;
+  color: #ff6600;
+  width: 58px;
+  height: 45px;
+  background: #fae6d8;
+}
+
+.chat-section {
+  padding: 22px 20px 60px;
+  height: calc(100% + 20px);
+}
+.chat-section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+@media all and (max-width: 330px) {
+  .chat-section {
+    padding: 22px 10px 60px;
+  }
+}
+.chat__text {
+  line-height: 1.5;
+}
+.chat__item {
+  width: 100%;
+  margin-top: 6px;
+  position: relative;
+}
+.chat__item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.chat__item:first-child {
+  margin-top: 0;
+}
+.chat__item .chat__time {
+  font-size: 10px;
+  color: #ffd3b6;
+}
+.chat__item-question {
+  float: left;
+}
+.chat__item-question .chat__time {
+  float: left;
+  position: absolute;
+  bottom: 0;
+}
+.chat__item-answer {
+  float: right;
+}
+.chat__item-answer .chat__profile {
+  float: right;
+}
+.chat__item-answer .chat__time {
+  float: right;
+  margin-top: 30px;
+}
+.chat__item-answer .chat__text--answer {
+  color: #ff6600;
+}
+.chat__profile {
+  float: left;
+}
+.chat__bubble {
+  width: 202px;
+  background-color: #fff0e6;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px 16px 13px;
+}
+.chat__bubble-form {
+  position: relative;
+  z-index: 2;
+}
+.chat__bubble:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+}
+.chat__bubble--question {
+  float: left;
+  margin-left: 7px;
+  margin-right: 5px;
+  margin-top: 14px;
+}
+.chat__bubble--question:after {
+  left: -4px;
+  background-image: url("../images/img-comev-talk-c.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 0 0;
+}
+.chat__bubble--answer {
+  float: right;
+  width: auto;
+  height: 35px;
+  padding: 9px 15px;
+  margin-top: 10px;
+  margin-right: 7px;
+  margin-left: 5px;
+  background-color: #ffdb00;
+}
+.chat__bubble--answer:after {
+  right: -4px;
+  background-image: url("../images/img-comev-answer-c.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 100% 0;
+}
+.chat__bubble--with-img {
+  width: auto;
+  padding: 0;
+}
+.chat__bubble--with-img--correct:after {
+  background-image: url("../images/img-comev-talk-r.png");
+}
+
+.label {
+  min-width: 50px;
+}
+
+.radio--button {
+  display: none;
+  -webkit-appearance: none;
+}
+.radio--button:checked + .label--with-radio {
+  background-color: #ff6600;
+}
+.radio--button:checked + .label--with-radio .radio__text {
+  color: #ffffff;
+}
+.radio__text {
+  color: #ff6600;
+  text-align: center;
+  font-weight: 600;
+}
+.radio.radio--small {
+  width: 1rem;
+  height: 1rem;
+  min-width: auto;
+  min-height: auto;
+}
+.radio.radio--small:checked:after {
+  width: .5rem;
+  height: .5rem;
+  top: 3px;
+  left: 3px;
+}
+
+.label--with-radio {
+  text-align: center;
+  height: 35px;
+  margin-top: 4px;
+  width: 100%;
+  border: solid 1px #ff6600;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.label--with-radio:first-child {
+  margin-top: 0;
+}
+
+.check {
+  -webkit-appearance: none;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #cacece;
+  background-color: #fafafa;
+}
+.check:checked {
+  background-color: #e9ecee;
+  color: #99a1a7;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.check:checked:after {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: #99a1a7;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.check.check--small {
+  width: 12px;
+  height: 12px;
+  margin: 2px 5px 2px 0;
+  padding: 0;
+  vertical-align: middle;
+}
+.check.check--small:checked:after {
+  width: 8px;
+  height: 8px;
+  top: 1px;
+  left: 1px;
+}
+
+.history-search-form {
+  padding: .8rem;
+  margin: 0 0 1rem;
+  background: url(../images/bg_searchbox.gif) repeat-x left bottom;
+  text-align: center;
+}
+.history-search-form .form-field + .form-field {
+  margin-top: 1rem;
+}
+.history-search-form-buttons {
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+.history-search-form-buttons .button + .button {
+  margin-left: -0.25rem;
+  margin-right: 0;
+}
+
+.form-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-field + .form-field:not(.only-button) {
+  margin-top: .5rem;
+}
+.form-field-start {
+  justify-content: flex-start;
+}
+.form-field-around {
+  justify-content: space-around;
+}
+.form-field .form-field-part {
+  margin: 0 5px;
+}
+
+.input-file__file-size {
+  font-size: .9rem;
+  float: right;
+  line-height: 1.8;
+}

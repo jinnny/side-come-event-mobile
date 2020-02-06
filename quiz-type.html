@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>오라! EVENT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#ff6600">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header class="chat-header">
+    <button class="chat__button-back"><img src="images/btn-comev-backarrow.svg" alt="뒤로"></button>
+    <h1 class="chat__title"><img src="images/btn-comev-eventtitle.svg" alt="라! EVENT"></h1>
+    <button class="chat__button-option"><img src="images/btn-comev-option.svg" alt="옵션"></button>
+  </header>
+  <main class="chat-section">
+    <!-- 질문-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question">
+        <form action="" class="chat__bubble-form">
+          <p class="chat__text">제 이름은 무엇일까요?</p>
+          <fieldset class="">
+            <input type="radio" id="five" class="radio radio--button" name="name" value="1" checked>
+            <label class="label--with-radio" for="five"><b class="radio__text">오렌지파이브</b></label>
+            <input type="radio" class="radio radio--button" id="life" name="name" value="2">
+            <label class="label--with-radio" for="life"><b class="radio__text">오렌지라이프</b></label>
+            <input type="radio" class="radio radio--button" id="ryan" name="name" value="3">
+            <label class="label--with-radio" for="ryan"><b class="radio__text">오렌지라이언</b></label>
+            <input type="radio" class="radio radio--button" id="round" name="name" value="4">
+            <label class="label--with-radio" for="round"><b class="radio__text">오렌지라운드</b></label>
+          </fieldset>
+        </form>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 질문-->
+    <!-- 답변-->
+    <article class="chat__item chat__item-answer">
+      <mark class="chat__profile"><img src="images/ic-comev-mychat.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--answer">
+        <div class="chat__bubble-form">
+          <p class="chat__text--answer">오렌지파이브</p>
+        </div>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 답변-->
+    <!-- 질문, 땡-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question chat__bubble--with-img">
+        <img src="images/img-comev-error.svg" alt="땡! 오답입니다.">
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 질문, 땡-->
+    <!-- 질문-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question">
+        <form action="" class="chat__bubble-form">
+          <p class="chat__text">제 이름은 무엇일까요?</p>
+          <fieldset class="">
+            <input type="radio" id="five" class="radio radio--button" name="name" value="1" checked>
+            <label class="label--with-radio" for="five"><b class="radio__text">오렌지파이브</b></label>
+            <input type="radio" class="radio radio--button" id="life" name="name" value="2">
+            <label class="label--with-radio" for="life"><b class="radio__text">오렌지라이프</b></label>
+            <input type="radio" class="radio radio--button" id="ryan" name="name" value="3">
+            <label class="label--with-radio" for="ryan"><b class="radio__text">오렌지라이언</b></label>
+            <input type="radio" class="radio radio--button" id="round" name="name" value="4">
+            <label class="label--with-radio" for="round"><b class="radio__text">오렌지라운드</b></label>
+          </fieldset>
+        </form>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 질문-->
+    <!-- 답변-->
+    <article class="chat__item chat__item-answer">
+      <mark class="chat__profile"><img src="images/ic-comev-mychat.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--answer">
+        <div class="chat__bubble-form">
+          <p class="chat__text--answer">오렌지라이프</p>
+        </div>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 답변-->
+    <!-- 질문, 정답-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question chat__bubble--with-img chat__bubble--with-img--correct">
+        <img src="images/img-comev-correct.svg" alt="정답입니다.">
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 질문, 정답-->
+    <!-- 질문-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question">
+        <form action="" class="chat__bubble-form">
+          <p class="chat__text">보험 상담 받아볼래요?</p>
+          <fieldset class="">
+            <input type="radio" id="yes" class="radio radio--button" name="answer" value="yes" checked>
+            <label class="label--with-radio" for="yes"><b class="radio__text">네</b></label>
+            <input type="radio" class="radio radio--button" id="no" name="answer" value="no">
+            <label class="label--with-radio" for="no"><b class="radio__text">아니오</b></label>
+          </fieldset>
+        </form>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 질문-->
+  </main>
+  <footer class="chat-footer">
+    <form action="">
+      <button class="chat__button-add" type="button"><img src="images/btn-comev-add.svg" alt="추가"></button>
+      <label for="msg" class="element--hidden">메시지를 입력하세요</label>
+      <input type="text" placeholder="메세지를 입력하세요" class="chat__input" id="msg">
+      <button class="chat__button-send" type="submit">전송</button>
+    </form>
+  </footer>
+</body>
+</html>
