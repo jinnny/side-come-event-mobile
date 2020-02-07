@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>오라! EVENT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#ff6600">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header class="chat-header">
+    <button class="chat__button-back"><img src="images/btn-comev-backarrow.svg" alt="뒤로"></button>
+    <h1 class="chat__title"><img src="images/btn-comev-eventtitle.svg" alt="라! EVENT"></h1>
+    <button class="chat__button-option"><img src="images/btn-comev-option.svg" alt="옵션"></button>
+  </header>
+  <main class="chat-section">
+    <!-- 질문-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question">
+        <form action="" class="chat__bubble-form">
+          <p class="chat__text">오라! 심리테스트 참여하고<br> 상품 받아보세요 ~</p>
+          <fieldset>
+            <input type="radio" id="join" class="radio radio--button" name="join" value="join" checked>
+            <label class="label--with-radio" for="join"><b class="radio__text">참여하기</b></label>
+            <input type="radio" class="radio radio--button" id="join2" name="join" value="join2">
+            <label class="label--with-radio" for="join2"><b class="radio__text">참여하지 않기</b></label>
+          </fieldset>
+        </form>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 질문-->
+    <!-- 답변-->
+    <article class="chat__item chat__item-answer">
+      <mark class="chat__profile"><img src="images/ic-comev-mychat.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--answer">
+        <div class="chat__bubble-form">
+          <p class="chat__text--answer">참여하기</p>
+        </div>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 답변-->
+    <!-- 심리테스트-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question chat__bubble--with-dropdown">
+        <p class="chat__text">혈액형 별 성격</p>
+        <ul class="dropdown js-dropdown">
+          <li class="dropdown__item is--active">
+            <header class="dropdown__item-header">
+              <strong class="dropdown__title">A형</strong>
+              <p class="dropdown__sub-title">A형은 어떤<br> 성격일까요?</p>
+            </header>
+            <div class="dropdown__item-content">
+              <p class="dropdown__item-content-text">
+                A형은 착하고 남을 배려한다.<br>
+                내성적인 경우가 있으나 친한 사이에서는 쾌활하다.
+              </p>
+              <a href="#" class="dropdown__more-link">더 자세히 보기</a>
+            </div>
+          </li>
+          <li class="dropdown__item">
+            <header class="dropdown__item-header">
+              <strong class="dropdown__title">B형</strong>
+              <p class="dropdown__sub-title">B형은 어떤<br> 성격일까요?</p>
+            </header>
+            <div class="dropdown__item-content">
+              <p class="dropdown__item-content-text">
+                B형은 착하고 남을 배려한다.<br>
+                내성적인 경우가 있으나 친한 사이에서는 쾌활하다.
+              </p>
+              <a href="#" class="dropdown__more-link">더 자세히 보기</a>
+            </div>
+          </li>
+          <li class="dropdown__item">
+            <header class="dropdown__item-header">
+              <strong class="dropdown__title">O형</strong>
+              <p class="dropdown__sub-title">O형은 어떤<br> 성격일까요?</p>
+            </header>
+            <div class="dropdown__item-content">
+              <p class="dropdown__item-content-text">
+                O형은 착하고 남을 배려한다.<br>
+                내성적인 경우가 있으나 친한 사이에서는 쾌활하다.
+              </p>
+              <a href="#" class="dropdown__more-link">더 자세히 보기</a>
+            </div>
+          </li>
+          <li class="dropdown__item">
+            <header class="dropdown__item-header">
+              <strong class="dropdown__title">AB형</strong>
+              <p class="dropdown__sub-title">AB형은 어떤<br> 성격일까요?</p>
+            </header>
+            <div class="dropdown__item-content">
+              <p class="dropdown__item-content-text">
+                AB형은 착하고 남을 배려한다.<br>
+                내성적인 경우가 있으나 친한 사이에서는 쾌활하다.
+              </p>
+              <a href="#" class="dropdown__more-link">더 자세히 보기</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 심리테스트-->
+  </main>
+  <footer class="chat-footer">
+    <form action="">
+      <button class="chat__button-add" type="button"><img src="images/btn-comev-add.svg" alt="추가"></button>
+      <label for="msg" class="element--hidden">메시지를 입력하세요</label>
+      <input type="text" placeholder="메세지를 입력하세요" class="chat__input" id="msg">
+      <button class="chat__button-send" type="submit">전송</button>
+    </form>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $('.js-dropdown .dropdown__item').on('click', function () {
+      if($(this).hasClass('is--active')) {
+       $(this).removeClass('is--active')
+      } else {
+        $('.js-dropdown .dropdown__item').removeClass('is--active');
+        $(this).addClass('is--active');
+      }
+    })
+  </script>
+</body>
+</html>

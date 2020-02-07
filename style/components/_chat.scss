@@ -45,6 +45,12 @@
         }
       }
     }
+    &--with-dropdown {
+      .chat__bubble {
+
+      }
+
+    }
   }
   &__profile {
     float: left;
@@ -107,6 +113,10 @@
           background-image: url('../images/img-comev-talk-r.png');
         }
       }
+    }
+    &--with-dropdown {
+      width: 230px;
+      padding: 10px;
     }
   }
 }
