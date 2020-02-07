@@ -403,6 +403,7 @@ table {
   background-repeat: no-repeat;
   background-position: 95% 15px;
   background-image: url("../images/btn-comev-fold.svg");
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
