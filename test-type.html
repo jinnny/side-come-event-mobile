@@ -117,12 +117,12 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
-    $('.js-dropdown .dropdown__item').on('click', function () {
-      if($(this).hasClass('is--active')) {
-       $(this).removeClass('is--active')
+    $('.js-dropdown .dropdown__item-header').on('click', function () {
+      if($(this).parents('.dropdown__item').hasClass('is--active')) {
+       $(this).parents('.dropdown__item').removeClass('is--active')
       } else {
         $('.js-dropdown .dropdown__item').removeClass('is--active');
-        $(this).addClass('is--active');
+        $(this).parents('.dropdown__item').addClass('is--active');
       }
     })
   </script>
