@@ -102,6 +102,7 @@
             </div>
           </li>
         </ul>
+        <button class="complete-button">선택완료</button>
       </div>
       <i class="chat__time">오전 9:30</i>
     </article>
@@ -117,14 +118,24 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
-    $('.js-dropdown .dropdown__item-header').on('click', function () {
+    // 링크를 누를 경우 닫히고 이동하는 기존의 경우
+    $('.js-dropdown .dropdown__item').on('click', function () {
+      if($(this).hasClass('is--active')) {
+       $(this).removeClass('is--active')
+      } else {
+        $('.js-dropdown .dropdown__item').removeClass('is--active');
+        $(this).addClass('is--active');
+      }
+    })
+    // 링크 누를 경우 닫히지 않고 이동할 경우 아래의 코드를 써주세요.
+    /*$('.js-dropdown .dropdown__item-header').on('click', function () {
       if($(this).parents('.dropdown__item').hasClass('is--active')) {
-       $(this).parents('.dropdown__item').removeClass('is--active')
+        $(this).parents('.dropdown__item').removeClass('is--active')
       } else {
         $('.js-dropdown .dropdown__item').removeClass('is--active');
         $(this).parents('.dropdown__item').addClass('is--active');
       }
-    })
+    })*/
   </script>
 </body>
 </html>
