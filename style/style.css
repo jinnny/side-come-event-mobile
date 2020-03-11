@@ -198,7 +198,7 @@ table {
 }
 
 .chat-section {
-  padding: 22px 20px 60px;
+  padding: 22px 10px 60px;
   height: calc(100% + 20px);
 }
 .chat-section::after {
@@ -213,6 +213,7 @@ table {
 }
 .chat__text {
   line-height: 1.5;
+  letter-spacing: -0.1px;
 }
 .chat__item {
   width: 100%;
@@ -233,6 +234,7 @@ table {
 }
 .chat__item-question {
   float: left;
+  margin-left: 10px;
 }
 .chat__item-question .chat__time {
   float: left;
@@ -241,13 +243,17 @@ table {
 }
 .chat__item-answer {
   float: right;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
 }
 .chat__item-answer .chat__profile {
   float: right;
 }
 .chat__item-answer .chat__time {
   float: right;
-  margin-top: 30px;
+  line-height: 2.2;
 }
 .chat__item-answer .chat__text--answer {
   color: #ff6600;
@@ -256,7 +262,7 @@ table {
   float: left;
 }
 .chat__bubble {
-  width: 202px;
+  width: 232px;
   background-color: #fff0e6;
   border-radius: 10px;
   position: relative;
@@ -291,7 +297,8 @@ table {
 .chat__bubble--answer {
   float: right;
   width: auto;
-  height: 35px;
+  min-height: 35px;
+  max-width: 232px;
   padding: 9px 15px;
   margin-top: 10px;
   margin-right: 7px;
@@ -309,7 +316,7 @@ table {
   width: auto;
   padding: 0;
 }
-.chat__bubble--with-img--correct:after {
+.chat__bubble--with-img--correct:after, .chat__bubble--with-img--type2:after {
   background-image: url("../images/img-comev-talk-r.png");
 }
 .chat__bubble--with-dropdown {
@@ -368,7 +375,7 @@ table {
 
 .label--with-radio {
   text-align: center;
-  height: 35px;
+  padding: 7px 4px;
   margin-top: 4px;
   width: 100%;
   border: solid 1px #ff6600;

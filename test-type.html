@@ -11,7 +11,7 @@
 <body>
   <header class="chat-header">
     <button class="chat__button-back"><img src="images/btn-comev-backarrow.svg" alt="뒤로"></button>
-    <h1 class="chat__title"><img src="images/btn-comev-eventtitle.svg" alt="라! EVENT"></h1>
+    <h1 class="chat__title"><img src="images/btn-comev-eventtitle.svg" alt="오라! EVENT"></h1>
     <button class="chat__button-option"><img src="images/btn-comev-option.svg" alt="옵션"></button>
   </header>
   <main class="chat-section">
@@ -34,12 +34,16 @@
     <!-- 질문-->
     <!-- 답변-->
     <article class="chat__item chat__item-answer">
-      <mark class="chat__profile"><img src="images/ic-comev-mychat.svg" alt=""></mark>
-      <div class="chat__bubble chat__bubble--answer">
-        <div class="chat__bubble-form">
-          <p class="chat__text--answer">참여하기</p>
+      <!-- 답변의 경우 <div class="chat-profile-bubble"></div> 로 프로필, 말풍선 감싸는 코드가 추가되었습니다. -->
+      <div class="chat-profile-bubble">
+        <mark class="chat__profile"><img src="images/ic-comev-mychat.svg" alt=""></mark>
+        <div class="chat__bubble chat__bubble--answer">
+          <div class="chat__bubble-form">
+            <p class="chat__text--answer">참여하기</p>
+          </div>
         </div>
       </div>
+      <!-- 답변의 경우 <div class="chat-profile-bubble"></div> 로 프로필, 말풍선 감싸는 코드가 추가되었습니다. -->
       <i class="chat__time">오전 9:30</i>
     </article>
     <!-- 답변-->
