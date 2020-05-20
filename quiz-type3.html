@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>오라! EVENT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#ff6600">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header class="chat-header">
+    <button class="chat__button-back"><img src="images/btn-comev-backarrow.svg" alt="뒤로"></button>
+    <h1 class="chat__title"><img src="images/btn-comev-eventtitle.svg" alt="라! EVENT"></h1>
+    <button class="chat__button-option"><img src="images/btn-comev-option.svg" alt="옵션"></button>
+  </header>
+  <footer class="chat-footer">
+    <form action="">
+      <button class="chat__button-add" type="button"><img src="images/btn-comev-add.svg" alt="추가"></button>
+      <label for="msg" class="element--hidden">메시지를 입력하세요</label>
+      <input type="text" placeholder="메세지를 입력하세요" class="chat__input" id="msg">
+      <button class="chat__button-send" type="submit">전송</button>
+    </form>
+  </footer>
+  <main class="chat-section">
+    <!-- 질문-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question">
+        <p class="chat__text">안녕하세요<br>
+          오라! EVENT~~<br>
+          사고보험금편입니다.<br>
+          사고보험금에 관한 간단한 퀴즈 풀고 경품 당첨의 행운도 누려보세요~</p>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 질문-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question">
+        <form action="" class="chat__bubble-form">
+          <p class="chat__text">1번. 보험금 신청은 지급사유 발생 후 언제까지해야할까요?</p>
+          <fieldset>
+            <input type="radio" id="3years" class="radio radio--button" name="period" value="1" checked>
+            <label class="label--with-radio" for="3years"><b class="radio__text">3년 이내</b></label>
+            <input type="radio" class="radio radio--button" id="month" name="period" value="2">
+            <label class="label--with-radio" for="month"><b class="radio__text">무조건 한 달 이내</b></label>
+            <input type="radio" class="radio radio--button" id="week" name="period" value="3">
+            <label class="label--with-radio" for="week"><b class="radio__text">아무리 바빠도 일주일 이내</b></label>
+          </fieldset>
+        </form>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 답변-->
+    <article class="chat__item chat__item-answer">
+      <!-- 답변의 경우 <div class="chat-profile-bubble"></div> 로 프로필, 말풍선 감싸는 코드가 추가되었습니다. -->
+      <div class="chat-profile-bubble">
+        <mark class="chat__profile"><img src="images/ic-comev-mychat.svg" alt=""></mark>
+        <div class="chat__bubble chat__bubble--answer">
+          <div class="chat__bubble-form">
+            <p class="chat__text--answer">무조건 한 달 이내</p>
+          </div>
+        </div>
+      </div>
+      <!-- 답변의 경우 <div class="chat-profile-bubble"></div> 로 프로필, 말풍선 감싸는 코드가 추가되었습니다. -->
+      <i class="chat__time">오전 9:30</i>
+    </article>
+    <!-- 답변-->
+    <!-- 질문-->
+    <article class="chat__item chat__item-question">
+      <mark class="chat__profile"><img src="images/ic-comev-orangeguide.svg" alt=""></mark>
+      <div class="chat__bubble chat__bubble--question">
+        <form action="" class="chat__bubble-form">
+          <p class="chat__text">참여해 주셔서 감사합니다.!<br> 앞으로도 더 나은 서비스로 보답하겠습니다.</p>
+          <fieldset>
+            <input type="radio" id="3years-re" class="radio radio--button" name="period" value="1">
+            <label class="label--with-radio" for="3years-re"><b class="radio__text">이벤트 목록으로</b></label>
+          </fieldset>
+        </form>
+      </div>
+      <i class="chat__time">오전 9:30</i>
+    </article>
+  </main>
+</body>
+</html>
